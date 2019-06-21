@@ -1,2 +1,2 @@
 # Python3
-Chuletas de python
+Scripts de ejercicios de python

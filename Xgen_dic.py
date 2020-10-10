@@ -43,7 +43,7 @@ ID1 = Param1()
 for i in ID1:
     list1.append(i)
 
-print(list1)
+#print(list1)
 
 class Param2:
     def __init__(self):
@@ -69,7 +69,7 @@ ID2 = Param2()
 for i in ID2:
     list2.append(i)
 
-print(list2)
+#print(list2)
 
 class Param3:
     def __init__(self):
@@ -95,7 +95,7 @@ ID3 = Param3()
 for i in ID3:
     list3.append(i)
 
-print(list3)
+#print(list3)
 
 for i in list1:
     for x in list2:

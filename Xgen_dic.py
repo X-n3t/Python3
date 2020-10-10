@@ -3,12 +3,16 @@
 
 print("** Uso: python3 Xgen_dic.py **")
 print("Ej. de construcción: range1+range2+range3+cola ==> 010191hi$ .. 311299hi$")
+
 a1, a2 = int(input("Selecciona dos números para el 1º rango :")),int(input())
 z1 = int(input("Número de digitos(rellena con ceros los faltantes):"))
+
 b1, b2 = int(input("Selecciona dos números para el 2º rango :")),int(input())
 z2 = int(input("Número de digitos(rellena con ceros los faltantes):"))
+
 c1, c2 = int(input("Selecciona dos números para el 3º rango :")),int(input())
 z3 = int(input("Número de digitos(rellena con ceros los faltantes):"))
+
 cola = input("Selecciona un patrón fijo para el final")
 
 param1 = range(a1, a2+1)
@@ -36,9 +40,7 @@ class Param1:
         val1 = val1.zfill(z1)
         return val1
 
-
 ID1 = Param1()
-
 
 for i in ID1:
     list1.append(i)
@@ -62,9 +64,7 @@ class Param2:
         val2 = val2.zfill(z2)
         return val2
 
-
 ID2 = Param2()
-
 
 for i in ID2:
     list2.append(i)
@@ -88,9 +88,7 @@ class Param3:
         val3 = val3.zfill(z3)
         return val3
 
-
 ID3 = Param3()
-
 
 for i in ID3:
     list3.append(i)

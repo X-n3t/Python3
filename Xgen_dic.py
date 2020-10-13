@@ -4,16 +4,16 @@
 print("** Uso: python3 Xgen_dic.py **")
 print("Ej. de construcción: range1+range2+range3+cola ==> 010191hi$ .. 311299hi$")
 
-a1, a2 = int(input("Selecciona dos números para el 1º rango :")),int(input())
-z1 = int(input("Número de digitos(rellena con ceros los faltantes):"))
+a1, a2 = int(input("Selecciona dos números para el 1º rango: ")),int(input())
+z1 = int(input("Número de digitos(rellena con ceros los faltantes): "))
 
-b1, b2 = int(input("Selecciona dos números para el 2º rango :")),int(input())
-z2 = int(input("Número de digitos(rellena con ceros los faltantes):"))
+b1, b2 = int(input("Selecciona dos números para el 2º rango: ")),int(input())
+z2 = int(input("Número de digitos(rellena con ceros los faltantes): "))
 
-c1, c2 = int(input("Selecciona dos números para el 3º rango :")),int(input())
-z3 = int(input("Número de digitos(rellena con ceros los faltantes):"))
+c1, c2 = int(input("Selecciona dos números para el 3º rango: ")),int(input())
+z3 = int(input("Número de digitos(rellena con ceros los faltantes): "))
 
-cola = input("Selecciona un patrón fijo para el final")
+cola = input("Selecciona un patrón fijo para el final: ")
 
 param1 = range(a1, a2+1)
 param2 = range(b1, b2+1)
@@ -98,4 +98,6 @@ for i in ID3:
 for i in list1:
     for x in list2:
         for y in list3:
-            print(i.rstrip()+x.rstrip()+y.rstrip()+str(cola))
+            f = open("worlistX.txt","a")
+            f.write(i.rstrip()+x.rstrip()+y.rstrip()+str(cola)+"\n")
+            f.close()
